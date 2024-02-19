@@ -65,3 +65,7 @@ print(a.swapcase())
 
 # MatchCase is like the switch case
 x = 4
+
+match x :
+    case 4 : print("This is 4")
+    case 0 : print("This is zero")
