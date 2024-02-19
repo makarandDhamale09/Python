@@ -48,3 +48,20 @@ for character in name:
 
 for i in enumerate(name):
     print(i)
+
+# String methods
+print("---------Strings---------------")
+a = "Makarand1"
+print(len(a))
+print(a.upper())
+print(a.lower())
+print(a.rstrip("!"))
+print(a.center(50))
+print(a.count("a"))
+print(a.isalpha())
+print(a.isalnum())
+print(a.islower())
+print(a.swapcase())
+
+# MatchCase is like the switch case
+x = 4
