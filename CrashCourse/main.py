@@ -16,18 +16,18 @@ print("--------Variables---------")
 a = 1
 b = "Makarand"
 c = True
-list = [8, 2.3, [-4, 5], ["apple", "banana"]]
+lists = [8, 2.3, [-4, 5], ["apple", "banana"]]
 tuple = ("Makarand", "abc", "apple", "banana")
-dict = {"name" : "Makarand", "age": 31, "canVote" : True}
+dict = {"name": "Makarand", "age": 31, "canVote": True}
 
 print(type(a))
 print(type(b))
 print(type(c))
-print(type(list))
+print(type(lists))
 print(type(tuple))
 print(type(dict))
 
-print(list)
+print(lists)
 print(tuple)
 print(dict)
 
@@ -64,8 +64,39 @@ print(a.islower())
 print(a.swapcase())
 
 # MatchCase is like the switch case
-x = 4
+print("-------Match case--------")
+x = 7
 
-match x :
-    case 4 : print("This is 4")
-    case 0 : print("This is zero")
+match x:
+    case 4:
+        print("This is 4")
+    case 0:
+        print("This is zero")
+    case _:
+        print("This is default case")
+
+# For Loop
+print("----------For Loop-----------")
+name = "Makarand"
+for i in name:
+    print(i)
+    if (i == "a"):
+        print("This is a special character 'a' ")
+
+# Range in loop
+for k in range(5):
+    print(k)
+
+# Functions in python
+print("---------Functions------------")
+
+
+def calculateGmean(a, b):
+    mean = (a * b) / (a + b)
+    print(mean)
+    return mean
+
+
+calculateGmean(7, 8)
+lists = [1, 2, 3, "Makarand", True]
+print(lists[-2])
