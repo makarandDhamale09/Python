@@ -100,3 +100,14 @@ def calculateGmean(a, b):
 calculateGmean(7, 8)
 lists = [1, 2, 3, "Makarand", True]
 print(lists[-2])
+
+# Tuples are list that cannot be modified
+print("---------Tuples---------- ")
+tup = (1, "Makarand", 3, 4, 5, 6, True)
+print(type(tup))
+# slicing in tuple same as list
+tup2 = tup[1:4]
+print(tup2)
+if 4 in tup:
+    print("4 is present in this tuple")
+

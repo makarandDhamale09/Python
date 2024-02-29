@@ -2,7 +2,7 @@ import time
 
 timestamp = time.strftime('%H:%M:%S')
 print(timestamp)
-hour = int(timestamp.split(":")[0])
+hour = int(time.strftime('%H'))
 if hour < 12:
     print("Good Morning Sir !!!!")
 elif hour < 16:
