@@ -111,3 +111,29 @@ print(tup2)
 if 4 in tup:
     print("4 is present in this tuple")
 
+# F-Strings : String formatting
+print("-------F-Strings----------")
+
+# old way
+letter = "Hey my name is {} and I am from {}"
+country = "India"
+name = "Makarand"
+print(letter.format(name, country))
+
+# with f string
+print(f"Hey my name is {name} and I am from {country}")
+price = 49.09999
+print(f"For only {price:.2f} dollars!!")
+
+# DocString
+print("--------DocStrings--------")
+
+
+# DocStrings are always after the func def
+def square(n):
+    """Takes in a number n and returns the square of n"""
+    print(n ** 2)
+
+
+square(5)
+print(square.__doc__)
