@@ -137,3 +137,15 @@ def square(n):
 
 square(5)
 print(square.__doc__)
+
+
+# Write fibonacci series using recurssion
+def fibonacci(n):
+    """Calculates Fibonacci series till number n"""
+    if n <= 1:
+        return n
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+
+
+print(fibonacci(9))
