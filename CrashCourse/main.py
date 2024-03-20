@@ -149,3 +149,23 @@ def fibonacci(n):
 
 
 print(fibonacci(9))
+
+##Sets
+print("-------------Sets---------------")
+# defining sets we use curly braces {}
+sets = {1, 2, 3, 3, 3, 4}
+print(sets)
+s1 = {1, 2, 3, 6}
+s2 = {4, 5, 6}
+s3 = s1.union(s2)  # union creates a new set
+print(s3)
+print(s1, s2)
+s1.update(s2)  # update method used to update same method
+print(s1)
+
+cities1 = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities2 = {"Tokyo", "Seoul", "Kabul", "Madrid"}
+cities__intersection = cities1.intersection(cities2)  # creates a intersection of two sets
+print(cities__intersection)
+cities1.intersection_update(cities2)  # will add all intersection values to the set on which the operation is being
+# performed
