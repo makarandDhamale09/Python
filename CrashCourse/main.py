@@ -150,7 +150,7 @@ def fibonacci(n):
 
 print(fibonacci(9))
 
-##Sets
+# Sets
 print("-------------Sets---------------")
 # defining sets we use curly braces {}
 sets = {1, 2, 3, 3, 3, 4}
@@ -169,3 +169,40 @@ cities__intersection = cities1.intersection(cities2)  # creates a intersection o
 print(cities__intersection)
 cities1.intersection_update(cities2)  # will add all intersection values to the set on which the operation is being
 # performed
+
+# Dictionary ####
+print("----------Dictionary--------")
+dic = {
+    "Makarand": "Human being",
+    "Spoon": "Object"
+}
+print(dic["Makarand"])
+print(dic.keys())
+
+# Iterating the key and values
+for key in dic.keys():
+    print(dic[key])
+
+print(dic.values())
+print(dic.items())
+
+# Exception Handling in Python
+print("------Exception handling---------")
+# Write a program to print the table of number
+# num = input("For Which number the table should be Printed : ")
+num = 5
+try:
+    for i in range(1, 11):
+        print(f"{int(num)} X {int(i)} = {int(num) * int(i)}")
+except ValueError as e:
+    print(f"Invalid Number value '{num}'")
+finally:
+    print("This is finally code...")
+
+# We want that this line should be executed no matter what
+print("Some Imp lines of code")
+
+# Custom Errors
+a = int(input("Enter value between 5 and 9 : "))
+if a < 5 or a > 9:
+    raise ValueError("Value should be between 5 and 9")
