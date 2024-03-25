@@ -17,19 +17,19 @@ a = 1
 b = "Makarand"
 c = True
 lists = [8, 2.3, [-4, 5], ["apple", "banana"]]
-tuple = ("Makarand", "abc", "apple", "banana")
-dict = {"name": "Makarand", "age": 31, "canVote": True}
+tup = ("Makarand", "abc", "apple", "banana")
+dictonary = {"name": "Makarand", "age": 31, "canVote": True}
 
 print(type(a))
 print(type(b))
 print(type(c))
 print(type(lists))
-print(type(tuple))
-print(type(dict))
+print(type(tup))
+print(type(dictonary))
 
 print(lists)
-print(tuple)
-print(dict)
+print(tup)
+print(dictonary)
 
 # Input in python
 # print("-----------Input----------")
@@ -80,7 +80,7 @@ print("----------For Loop-----------")
 name = "Makarand"
 for i in name:
     print(i)
-    if (i == "a"):
+    if i == "a":
         print("This is a special character 'a' ")
 
 # Range in loop
@@ -91,13 +91,13 @@ for k in range(5):
 print("---------Functions------------")
 
 
-def calculateGmean(a, b):
-    mean = (a * b) / (a + b)
+def calculate_gmean(num1, num2):
+    mean = (num1 * num2) / (num1 + num2)
     print(mean)
     return mean
 
 
-calculateGmean(7, 8)
+calculate_gmean(7, 8)
 lists = [1, 2, 3, "Makarand", True]
 print(lists[-2])
 
@@ -165,7 +165,7 @@ print(s1)
 
 cities1 = {"Tokyo", "Madrid", "Berlin", "Delhi"}
 cities2 = {"Tokyo", "Seoul", "Kabul", "Madrid"}
-cities__intersection = cities1.intersection(cities2)  # creates a intersection of two sets
+cities__intersection = cities1.intersection(cities2)  # creates an intersection of two sets
 print(cities__intersection)
 cities1.intersection_update(cities2)  # will add all intersection values to the set on which the operation is being
 # performed
@@ -203,6 +203,7 @@ finally:
 print("Some Imp lines of code")
 
 # Custom Errors
-a = int(input("Enter value between 5 and 9 : "))
+# a = int(input("Enter value between 5 and 9 : "))
+a = 7
 if a < 5 or a > 9:
     raise ValueError("Value should be between 5 and 9")
