@@ -207,3 +207,41 @@ print("Some Imp lines of code")
 a = 7
 if a < 5 or a > 9:
     raise ValueError("Value should be between 5 and 9")
+
+# Map, Filter, Reduce
+print("-----Map,Filter,Reduce----")
+
+
+# MAP
+def cube(x):
+    return x * x * x
+
+
+listNum = [1, 2, 4, 6, 4, 3]
+
+m = map(cube, listNum)
+print(list(m))
+
+
+# FILTER
+def filter_element(x):
+    if x % 2 == 0:
+        return True
+    else:
+        return False
+
+
+m = filter(filter_element, listNum)
+print(list(m))
+
+# REDUCE
+# import is required to run the reduce func
+from functools import reduce
+
+
+def reduce_func(x, y):
+    return x + y
+
+
+sum_of_nums = reduce(reduce_func, listNum)
+print(sum_of_nums)
