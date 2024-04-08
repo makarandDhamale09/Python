@@ -245,3 +245,11 @@ def reduce_func(x, y):
 
 sum_of_nums = reduce(reduce_func, listNum)
 print(sum_of_nums)
+
+# 'is' vs '=='
+# Constants are only created once even if it is integer
+a = [1, 2, 43]  # creates a new list when defined. so the memory locations are different
+b = [1, 2, 43]
+
+print(a is b)  # compares exact location of object in memory, FALSE
+print(a == b)  # compares value , TRUE
