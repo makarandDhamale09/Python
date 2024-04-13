@@ -1,4 +1,6 @@
-from AccessModifiers import Student,Employee
+from AccessModifiers import Student, Employee
+
+
 class Person:
     # Args constructor where self is mandatory
     def __init__(self, name, occ):
