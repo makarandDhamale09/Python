@@ -63,4 +63,9 @@ obj = Student()
 print(obj._name)
 
 obj1 = Employee()
-print(f"Value {obj1.__name}")
+
+# This will show you all the variables available in obj1
+print(dir(obj1))
+
+# name Mangling to display private variables
+print(f"Value : {obj1._Employee__name}")
