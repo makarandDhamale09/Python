@@ -18,8 +18,6 @@ list.insert(2, "Grape")
 
 print(f"Length of list is {list.__len__()}")
 
-
-
 for index, item in enumerate(list):
   print(f"Item {index}: {item}")
 
@@ -40,4 +38,42 @@ print(f"Count of 'Apple': {count}")
 for item in tuple:
   print(item)
 
-#
+
+
+# Dictionaries
+"""
+Dictionaries are mutable mappings in Python, consisting of key-value pairs.
+They are defined using curly braces and can contain mixed data types.
+Dictionaries allow for fast lookups, insertions, and deletions based on keys.
+These are similar to hash maps in other programming languages.
+"""
+
+print("\nDictionaries:\n--------------------------------")
+dictionary = {
+    "name": "John",
+    "age": 30,
+    "city": "New York",
+    "is_student": False,
+    "courses": ["Math", "Science", "History"]
+}
+
+# Accessing values by keys
+print(f"Name: {dictionary['name']}")
+print(f"Age: {dictionary['age']}")
+print(f"City: {dictionary['city']}")  
+
+
+# Sets
+"""
+Sets are unordered collections of unique elements in Python.
+They are defined using curly braces or the set() constructor.
+Sets support operations like union, intersection, and difference.
+Sets are useful for membership testing and eliminating duplicate entries.
+"""
+print("\nSets:\n--------------------------------")
+colors = {"red", "green", "blue"}
+
+colors.add("yellow")  # Adding an element
+colors.remove("green")  # Removing an element
+colors.update(["purple", "orange"])  # Adding multiple elements
+print(f"Colors set: {colors}")
